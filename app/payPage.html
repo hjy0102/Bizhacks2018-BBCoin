@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Payment</title>
+
+  <link href="./stylesheets/app.css" rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+  <script type="text/javascript" src="../src/jquery.qrcode.js"></script>
+  <script type="text/javascript" src="../src/qrcode.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="./images/bestbuy_logo.png" height="55">
+    </div>
+
+    <br>
+    <br>
+
+    <div align="center">
+      <h1 style="color: #003b64">Scan for Payment</h1>
+
+      <div id="qrcode"></div>
+      <script>
+        jQuery('#qrcode').qrcode({
+          width: 275,
+          height: 275,
+          text: "this is the qr code address"
+        });
+      </script>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="tabbar"></div>
+  </div>
+</body>
+</html>
