@@ -61,7 +61,7 @@
   color: #fff;
 }
 
-.actionButtons#reload {
+.actionButtons#reload, .actionButtons#start {
   background-color: #fff;
   color: #003b64;
 }
