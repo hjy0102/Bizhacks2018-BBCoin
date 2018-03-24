@@ -1,3 +1,22 @@
+#loader {
+  border: 16px solid #003b64;
+  border-top: 16px solid #ffe200;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 0.8s linear infinite;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
 .container {
   /* hard-coded positioning */
   position: absolute;
@@ -56,12 +75,12 @@
   font-size: 16px;
 }
 
-.actionButtons#pay, .actionButtons#confirm {
+.actionButtons#pay, .actionButtons#confirm, .actionButtons#startAsMerchant {
   background-color: #003b64;
   color: #fff;
 }
 
-.actionButtons#reload, .actionButtons#start {
+.actionButtons#reload, .actionButtons#startAsCustomer {
   background-color: #fff;
   color: #003b64;
 }
