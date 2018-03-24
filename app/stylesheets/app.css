@@ -18,7 +18,6 @@
 }
 
 .container {
-  /* hard-coded positioning */
   position: absolute;
   width: 334px;
   height: 593px;
@@ -97,9 +96,6 @@
 
 
 body {
-  /* margin-left: 25%;
-  margin-right: 25%;
-  margin-top: 10%; */
   width: 420px;
   margin: 0;
   background-image: url("../images/iphone.png");
@@ -152,29 +148,6 @@ h1#payedAmount {
 #paymentInfo td:last-child {
   text-align: right;
 }
-
-/* button {
-  font-size: 16px;
-  padding: 5px;
-} */
-
-/* h1, h2 {
-  display: inline-block;
-  vertical-align: middle;
-  margin-top: 0px;
-  margin-bottom: 10px;
-}
-
-h2 {
-  color: #AAA;
-  font-size: 32px;
-}
-
-h3 {
-  font-weight: normal;
-  color: #AAA;
-  font-size: 24px;
-} */
 
 .black {
   color: black;
