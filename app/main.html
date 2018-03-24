@@ -9,16 +9,30 @@
 <body>
     <div class="container">
         <div class="header"> 
-                <img src="./images/bestbuy_logo.png" height="55">
+            <img src="./images/bestbuy_logo.png" height="55">
+        </div>
+
+        <br><br>
+
+        <div class="balance">
+            <p>BALANCE</p>
+            <h1 id="amount">500.00</h1>
         </div>
           
-        <br>
-        <h1>Transaction</h1>
-        <label for="amount">Amount:</label><input type="text" id="amount" placeholder=""></input>
-        <label for="receiver">Account:</label><input type="text" id="receiver" placeholder=""></input>
-        <br></br>
-          
-        <button id="send" onclick="App.sendCoin()">Purchase</button>
+        <br><br><br><br>
+
+        <div class="actions"> 
+            <br><br>
+            <button class="actionButtons" id="pay" onclick="">PAY</button>
+            <br><br>
+            <button class="actionButtons" id="reload" onclick="">RELOAD</button>
+        </div>
+        
+        <div class="tabbar">
+
+        </div>
+
+        <!-- <button id="send" onclick="App.sendCoin()">Purchase</button> -->
     </div>
 </body>
 </html>
