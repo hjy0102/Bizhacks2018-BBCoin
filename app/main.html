@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BB Coin</title>
+  <link href="./stylesheets/app.css" rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <script src="./app.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header"> 
+                    <h1>BB Coin</h1>
+                    <h2>Payment System for BestBuy</h2>
+        </div>
+          
+        <br>
+        <h1>Transaction</h1>
+        <label for="amount">Amount:</label><input type="text" id="amount" placeholder=""></input>
+        <label for="receiver">Account:</label><input type="text" id="receiver" placeholder=""></input>
+        <br></br>
+          
+        <button id="send" onclick="App.sendCoin()">Purchase</button>
+    </div>
+</body>
+</html>
