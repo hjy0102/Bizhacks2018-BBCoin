@@ -2,19 +2,20 @@
 <html>
 <head>
   <title>BB Coin</title>
+  <link href="./stylesheets/app.css" rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
   <script src="./app.js"></script>
 </head>
 <body>
-  <h1>BB Coin</h1>
-  <h2>Payment System for BestBuy</h2>
+    <div class="container" style="background-color: #003b64;">
 
-  <br>
-  <h1>Transaction</h1>
-  <label for="amount">Amount:</label><input type="text" id="amount" placeholder=""></input>
-  <label for="receiver">Account:</label><input type="text" id="receiver" placeholder=""></input>
-  <br></br>
-  
-  <button id="send" onclick="App.sendCoin()">Purchase</button>
+      <br><br><br><br><br><br><br><br>
+      <div align="center">
+        <img  id="logo" src="./images/bestbuy_logo.png" onclick="window.location='main.html'" height="110">
+      </div>
+      <br><br><br><br>
+          
+      <button class="actionButtons" id="reload" onclick="window.location='main.html'">START</button>
+    </div>
 </body>
 </html>
