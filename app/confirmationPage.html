@@ -1,56 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Confirmation</title>
-  <link href="./stylesheets/app.css" rel='stylesheet' type='text/css'>
-  <link href="./stylesheets/hover-min.css" rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-  <script src="./app.js"></script>
+    <title>Confirmation</title>
+    <link href="./stylesheets/app.css" rel='stylesheet' type='text/css'>
+    <link href="./stylesheets/hover-min.css" rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <script src="./javascripts/app.js"></script>
 </head>
-<body>
+<body onload="loadingHandler()" style="margin:0;">
     <div class="container">
+        <div id="loader"></div>
+        
         <div class="header"> 
             <img id="logo" src="./images/bestbuy_logo.png" onclick="window.location='main.html'" height="55">
         </div>
-
-        <br><br>
-
-        <div align="center" class="paymentConfirmation">
-            <i class="fas fa-check-circle fa-3x" style="color:#ffe200"></i>
+        
+        <div id="loader_placeholder" style="height:80.25%"></div>
+        
+        <div id="show_after_loading">
+            
             <br><br>
-            <h1 id="payedAmount">92.56</h1>
-            <p>Payment Approved</p>
+            
+            <div class="paymentConfirmation" align="center">
+                <i class="fas fa-check-circle fa-3x" style="color:#ffe200"></i>
+                <br><br>
+                <h1 id="payedAmount">92.56</h1>
+                <p>Payment Approved</p>
+            </div>
+            
+            <br>
+            <hr id="horizontalLine">
+            <br>
+            
+            <table id="paymentInfo" align="center" style="width:60%">
+                <tr>
+                    <td>Sent To</td>
+                    <td>Geek Squad</td> 
+                </tr>
+                <tr>
+                    <td>Date</td>
+                    <td>2018.03.24 1:45PM</td> 
+                </tr>
+            </table>
+            
+            <br><br>
+            
+            <button class="actionButtons hvr-shrink" id="confirm" onclick="window.location='main.html'" style="margin-top:18px">CONFIRM</button>
+            
+            <br><br>
+            
         </div>
-
-        <br>
-
-        <hr id="horizontalLine">
-
-        <br>
-        
-        <table id="paymentInfo" align="center" style="width:60%">
-            <tr>
-                <td>Sent To</td>
-                <td>Geek Squad</td> 
-            </tr>
-            <tr>
-                <td>Date</td>
-                <td>2018.03.24 1:45PM</td> 
-            </tr>
-        </table>
-        
-        <br><br>
-        
-        <button class="actionButtons hvr-shrink" id="confirm" onclick="window.location='main.html'" style="margin-top:18px">CONFIRM</button>
-        
-        <br><br>
-        
         <div class="tabbar">
             <i class="fas fa-credit-card fa-lg" style="margin-top:18px; margin-left: 60px"></i>
             <i class="fas fa-history fa-lg" style="margin-top:18px; margin-left: 70px"></i>
             <i class="fas fa-ellipsis-v fa-lg" style="margin-top:18px; margin-left: 75px"></i>
         </div>
-
     </div>
 </body>
 <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
