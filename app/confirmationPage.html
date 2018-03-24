@@ -12,31 +12,37 @@
             <img id="logo" src="./images/bestbuy_logo.png" onclick="window.location='main.html'" height="55">
         </div>
 
-        <br><br><br>
+        <br><br>
 
         <div align="center" class="paymentConfirmation">
             <i class="fas fa-check-circle fa-3x" style="color:#ffe200"></i>
             <br><br>
             <h1 id="payedAmount">92.56</h1>
-            <p>Payment Completed</p>
+            <p>Payment Approved</p>
         </div>
 
-        <br><br><br><br><br><br>
-        <!-- <br><br>
+        <br>
 
-        <div class="balance">
-            <p>BALANCE</p>
-            <h1 id="amount">500.00</h1>
-        </div>
-          
-        <br><br><br><br>
+        <hr id="horizontalLine">
 
-        <div class="actions"> 
-            <br><br>
-            <button class="actionButtons" id="pay" onclick="window.location='payPage.html'">PAY</button>
-            <br><br>
-            <button class="actionButtons" id="reload" onclick="">RELOAD</button>
-        </div> -->
+        <br>
+        
+        <table id="paymentInfo" align="center" style="width:60%">
+            <tr>
+                <td>Sent To</td>
+                <td>Geek Squad</td> 
+            </tr>
+            <tr>
+                <td>Date</td>
+                <td>2018.03.24 1:45PM</td> 
+            </tr>
+        </table>
+        
+        <br><br>
+        
+        <button class="actionButtons" id="confirm" onclick="window.location='main.html'" style="margin-top:18px">CONFIRM</button>
+        
+        <br><br>
         
         <div class="tabbar">
             <i class="fas fa-credit-card fa-lg" style="margin-top:18px; margin-left: 60px"></i>

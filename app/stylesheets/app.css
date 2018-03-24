@@ -56,7 +56,7 @@
   font-size: 16px;
 }
 
-.actionButtons#pay {
+.actionButtons#pay, .actionButtons#confirm {
   background-color: #003b64;
   color: #fff;
 }
@@ -111,8 +111,27 @@ h1#payedAmount {
 }
 
 .paymentConfirmation p {
-  font-size: 13px;
+  font-size: 14px;
   color: gray
+}
+
+#horizontalLine {
+  width: 60%;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ddd;
+}
+
+#paymentInfo {
+  font-size: 13px;
+}
+
+#paymentInfo td:first-child {
+  color: gray;
+}
+
+#paymentInfo td:last-child {
+  text-align: right;
 }
 
 /* button {
