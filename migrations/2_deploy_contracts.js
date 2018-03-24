@@ -1,8 +1,6 @@
-var ConvertLib = artifacts.require("./ConvertLib.sol");
-var MetaCoin = artifacts.require("./MetaCoin.sol");
+var BBCoin = artifacts.require("./BBCoin.sol");
 
 module.exports = function(deployer) {
-  deployer.deploy(ConvertLib);
-  deployer.link(ConvertLib, MetaCoin);
-  deployer.deploy(MetaCoin);
+  // constructor requires init coin amount
+  deployer.deploy(BBCoin, 0);
 };
