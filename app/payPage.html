@@ -15,30 +15,28 @@
 <body>
   <div class="container">
     <div class="header">
-      <img src="./images/bestbuy_logo.png" onclick="window.location='main.html'" height="55">
+      <img id="logo" src="./images/bestbuy_logo.png" onclick="window.location='main.html'" height="55">
     </div>
 
-    <br>
+    <br><br><br><br>
 
     <div align="center">
-      <h1 style="color: #003b64">Scan for Payment</h1>
+      <h1 style="color: #455A64">Scan for Payment</h1>
+      <br>
 
       <div id="qrcode"></div>
       <script>
         jQuery('#qrcode').qrcode({
-          width: 275,
-          height: 275,
+          width: 170,
+          height: 170,
           text: "this is the qr code address"
         });
       </script>
     </div>
 
-    <br>
-    <br>
-    <br>
-    <br>
+    <br><br><br><br><br>
 
-    <div class="tabbar">
+    <div class="tabbar" style="margin-top: 27px">
         <i class="fas fa-credit-card fa-lg" style="margin-top:18px; margin-left: 60px"></i>
         <i class="fas fa-history fa-lg" style="margin-top:18px; margin-left: 70px"></i>
         <i class="fas fa-ellipsis-v fa-lg" style="margin-top:18px; margin-left: 75px"></i>
