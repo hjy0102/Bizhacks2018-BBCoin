@@ -26,6 +26,10 @@ app.get('/reloadPage.html', function(req, res) {
   res.sendFile(__dirname + '/reloadPage.html');
 });
 
+app.get('/update.html', function(req, res) {
+  res.sendFile(__dirname + '/update.html');
+});
+
 app.listen(port, function() {
   console.log('local port number: ' + port);
 });
