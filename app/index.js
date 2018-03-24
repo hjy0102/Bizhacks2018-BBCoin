@@ -1,10 +1,10 @@
-var app = require('express')();
+var express = require('express');
+var app = express();
 var http = require('http').Server(app);
-var path = require('path')
-var port = process.env.PORT || 3200;
+var port = process.env.PORT || 5000;
 
-app.use(app.static(path.join(__dirname, 'images')));
-app.use(app.static(path.join(__dirname, 'stylesheets')));
+app.use(express.static(__dirname + './images'));
+app.use(express.static(__dirname + './stylesheets'));
 
 app.get('/', function(req, res) {
   res.sendFile(__dirname + '/index.html');
