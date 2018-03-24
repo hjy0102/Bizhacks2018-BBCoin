@@ -75,12 +75,12 @@
   font-size: 16px;
 }
 
-.actionButtons#pay, .actionButtons#confirm {
+.actionButtons#pay, .actionButtons#confirm, .actionButtons#startAsMerchant {
   background-color: #003b64;
   color: #fff;
 }
 
-.actionButtons#reload, .actionButtons#start {
+.actionButtons#reload, .actionButtons#startAsCustomer {
   background-color: #fff;
   color: #003b64;
 }
